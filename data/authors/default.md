@@ -1,18 +1,18 @@
 ---
-name: Karan Pratap Singh
-shortname: Karan
+name: Abdelati Elasri
+shortname: Abdelati
 avatar: /static/avatar.jpg
-occupation: Software Engineer
-company: Curebase
+occupation: Site Reliability Engineer
+company: elham.sa
 resume: /static/Karan_Resume.pdf
-email: contact@karanpratapsingh.com
-twitter: https://twitter.com/karan_6864
-linkedin: https://www.linkedin.com/in/karan99
-github: https://github.com/karanpratapsingh
+email: abdelattie@gmail.com
+twitter: https://twitter.com/kaizendae
+linkedin: https://www.linkedin.com/in/elasri-abdelati
+github: https://github.com/kaizendae
 ---
 
-A software engineer who values learning and growing with people, teams, and technologies.
+A Site Reliability Engineer with a Full-Stack Tech-for-impact mindset.
 
-Presently, I am working as a Software Engineer at [Curebase](https://www.curebase.com) where I am helping to build a decentralized clinical trial platform while scaling infrastructure with a focus on security, HIPAA, and GDPR compliance.
+Presently, I am working at [Elham.sa](https://www.elham.sa) where I'm building and maintaining an E-learning platform serving thousands of users.
 
-Previously I've worked with the Digitization Program Office (DPO) at the [Smithsonian Institution](https://www.si.edu) as a consulting Full Stack Engineer in collaboration with the Office of the Chief Information Officer (OCIO).
+Hosting [Devs in Style Podcast](https://www.fastb.io/devsinstyle) the podcast for Moroccan tech-savvies, tune-in for knowledge and fun.
