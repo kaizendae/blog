@@ -4,7 +4,7 @@ shortname: Abdelati
 avatar: /static/avatar.jpg
 occupation: Site Reliability Engineer
 company: elham.sa
-resume: /static/Karan_Resume.pdf
+resume: https://bit.ly/abdelati-resume
 email: abdelattie@gmail.com
 twitter: https://twitter.com/kaizendae
 linkedin: https://www.linkedin.com/in/elasri-abdelati
