@@ -33,13 +33,13 @@ There are two different styles of achieving this, there is the push-based and pu
 
 ### Push-based deployment
 
-In push-based deployment, developers push changes to the infrastructure code to a Git repository. A CD tool like Jenkins, ArgoCD, Bitbucket Pipelines or Github Actions then picks up these changes and deploys them to the target environment. This approach is often used in non-Kubernetes environments and in Kubernetes environments alike.
+In push-based deployment, developers push changes to the infrastructure code to a Git repository. A CD tool like Jenkins, ArgoCD, Bitbucket Pipelines or Github Actions then picks up these changes and deploys them to the target environment. Ex:
 
-**Pulumi GitHub Actions** enable you to create a workflow in your continuous delivery pipeline that previews or updates your environment.
+[**Pulumi GitHub Actions**](https://www.pulumi.com/docs/guides/continuous-delivery/github-actions/) enable you to create a workflow in your continuous delivery pipeline that previews or updates your environment.
 
-If your Infrastructure as Code (IaC) consists of Kubernetes manifests, you can use the **Kubernetes Action**. This action helps you push the new changed manifests to your cluster.
+If your Infrastructure as Code (IaC) consists of Kubernetes manifests, you can use the [**Kubernetes Action**](https://github.com/marketplace/actions/kubernetes-action). This action helps you push the new changed manifests to your cluster.
 
-This method is simple because it only requires adding one integration to your existing CD pipeline. The one-way push operation is simple and optimized, as it runs once per deployment and adds no stress to our network.
+This method is simple because it only requires adding one integration to your existing CD pipeline. The one-way push operation is simple and optimized, as it runs once per deployment and adds no stress to our network. it can also be used in Kubernetes and non-Kubernetes environments alike.
 
 This approaches has two drawbacks:
 
