@@ -56,8 +56,6 @@ This approach is more secure as you don't have to share your cluster's access wi
 
 This approach has a flaw that only becomes problematic at large scales and with big Kubernetes clusters. With many agents polling your container registries and Git (especially self-hosted), it can overload your network resources (i.e., bandwidth) and potentially hurt your overall performance.
 
-## Overall
+## In short
 
-In conclusion, GitOps is a powerful approach to infrastructure management that allows you to define infrastructure as code, version control it in Git, and automate the deployment of changes using CD tools. While both push-based and pull-based deployment methods have their merits, I personally favor the pull-based approach, as it is more secure and less prone to configuration drift. By adopting GitOps, you can ensure consistency in your environments, avoid some downtime, and ultimately speed up your business goals.
-
-In the next post, I will demonstrate a GitOps workflow using FluxCD. Make sure to follow me on LinkedIn and Twitter to stay updated.
+GitOps is a powerful way to manage infrastructure. With GitOps, you define infrastructure as code, version control it in Git, and automate deployment of changes with CD tools. There are two deployment methods: push-based and pull-based. I prefer the pull-based method because it's more secure and less prone to problems. To choose the best approach, consider your team's needs and weigh the pros and cons of each method. Either way, you'll have better collaboration and compliance, and improved automation for more stability and resilience.
