@@ -21,7 +21,7 @@ export default function Podcast({ episodes }) {
     <div>
       <ul>
         {episodes.map(episode => (
-          <Link key={episode.guid} passHref={episode.link} href={episode.link}>
+          <Link key={episode.guid} href={episode.link}>
             <li
               key={episode.guid}
               className='mb-4 flex h-32 cursor-pointer flex-row hover:bg-gray-100 hover:dark:bg-gray-600'
