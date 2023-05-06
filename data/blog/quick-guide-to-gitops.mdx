@@ -1,0 +1,63 @@
+---
+title: 'Quick comprehensive guide to GitOps'
+date: '2022-01-06'
+tags: ['devops', 'sre', 'gitops', 'fluxcd']
+draft: false
+summary: 'A comprehensive guide to GitOps, an approach to infrastructure management that involves defining infrastructure as code and version controlling it in Git. The article explores the benefits of GitOps and its different approaches, including push-based and pull-based deployment.'
+images: ['']
+authors: ['default']
+---
+
+Are you familiar with GitOps and interested in catching up with your team? Or are you wondering if adopting this approach will solve some of your problems?
+This article explores the benefits of GitOps and its different approaches, and explains why it's worth considering for your team.
+
+---
+
+### The Git in Git-Ops: Infrastructure As Code
+
+![GitOps](https://sunnysingh.io/static/1148fbc10e17a19897b82cf82c816d62/2bef9/meta.png)
+
+If you guessed from the name that we're versioning something in Git, you're correct. Specifically, we're versioning the declarative code that defines our infrastructure.
+
+When we provision infrastructure, we can do it imperatively, using AWS console or AWS CLI commands, for example. However, this imperative approach has some unbearable flaws, such as leading to configuration drift and inconsistencies and unpredictability in your environments, which increases the risk of downtime, security vulnerabilities, and being difficult to automate. Ultimately, it can slow down your business goals as customers may lose trust in your ability to provide reliable and secure services.
+
+Tools like Pulumi and Terraform have emerged to help engineers write declarative Infrastructure as Code that can be version controlled in Git. This allows us to keep track of changes happening to infrastructure over time and avoid configuration drift and inconsistency.
+
+### The Ops in Git-Ops
+
+![GitOps](https://raw.githubusercontent.com/RogueDudes/roguedudes.github.io/master/assets/images/automate.jpg)
+
+Now that we have our Infrastructure defined and version controlled, we want to automate the execution of changes. which means an automatic provisioning of the defined infrastructure following the change of code.
+
+There are two different styles of achieving this, there is the push-based and pull-based.
+
+### Push-based deployment
+
+In push-based deployment, developers push changes to the infrastructure code to a Git repository. A CD tool like Jenkins, ArgoCD, Bitbucket Pipelines or Github Actions then picks up these changes and deploys them to the target environment. This approach is often used in non-Kubernetes environments and in Kubernetes environments alike.
+
+**Pulumi GitHub Actions** enable you to create a workflow in your continuous delivery pipeline that previews or updates your environment.
+
+If your Infrastructure as Code (IaC) consists of Kubernetes manifests, you can use the **Kubernetes Action**. This action helps you push the new changed manifests to your cluster.
+
+This method is simple because it only requires adding one integration to your existing CD pipeline. The one-way push operation is simple and optimized, as it runs once per deployment and adds no stress to our network.
+
+This approaches has two drawbacks:
+
+- To enable the CD steps to apply changes, you must share the credentials of your cloud environment or cluster access in the environment variables of your repository. which makes push-based less secure.
+- Since it's a one-way push, configuration drift can still occur if changes are made to the cluster manually or from other sources, which can negatively impact the consistency of your environment.
+
+### Pull-based deployment
+
+This approach is often used in Kubernetes environments, where tools like FluxCD are used to automate the deployment of changes to Kubernetes clusters.
+
+In pull-based deployment, the CD tool polls the Git repository for changes to infrastructure code and/or Container registries. When changes are detected, the CD tool's reconciliation loop automatically synchronizes the changes into your cluster, making it match the desired state you defined in the repository.
+
+This approach is more secure as you don't have to share your cluster's access with CD pipeline to apply changes like in push-based.
+
+This approach has a flaw that only becomes problematic at large scales and with big Kubernetes clusters. With many agents polling your container registries and Git (especially self-hosted), it can overload your network resources (i.e., bandwidth) and potentially hurt your overall performance.
+
+## Overall
+
+In conclusion, GitOps is a powerful approach to infrastructure management that allows you to define infrastructure as code, version control it in Git, and automate the deployment of changes using CD tools. While both push-based and pull-based deployment methods have their merits, I personally favor the pull-based approach, as it is more secure and less prone to configuration drift. By adopting GitOps, you can ensure consistency in your environments, avoid some downtime, and ultimately speed up your business goals.
+
+In the next post, I will demonstrate a GitOps workflow using FluxCD. Make sure to follow me on LinkedIn and Twitter to stay updated.
