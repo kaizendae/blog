@@ -31,7 +31,7 @@ Now that we have our Infrastructure defined and version controlled, we want to a
 
 There are two different styles of achieving this, there is the push-based and pull-based.
 
-### Push-based deployment
+#### Push-based deployment
 
 In push-based deployment, developers push changes to the infrastructure code to a Git repository. A CD tool like Jenkins, ArgoCD, Bitbucket Pipelines or Github Actions then picks up these changes and deploys them to the target environment. Ex:
 
@@ -46,7 +46,7 @@ This approaches has two drawbacks:
 - To enable the CD steps to apply changes, you must share the credentials of your cloud environment or cluster access in the environment variables of your repository. which makes push-based less secure.
 - Since it's a one-way push, configuration drift can still occur if changes are made to the cluster manually or from other sources, which can negatively impact the consistency of your environment.
 
-### Pull-based deployment
+#### Pull-based deployment
 
 This approach is often used in Kubernetes environments, where tools like FluxCD are used to automate the deployment of changes to Kubernetes clusters.
 
@@ -56,6 +56,6 @@ This approach is more secure as you don't have to share your cluster's access wi
 
 This approach has a flaw that only becomes problematic at large scales and with big Kubernetes clusters. With many agents polling your container registries and Git (especially self-hosted), it can overload your network resources (i.e., bandwidth) and potentially hurt your overall performance.
 
-## In short
+### In short
 
-GitOps is a powerful way to manage infrastructure. With GitOps, you define infrastructure as code, version control it in Git, and automate deployment of changes with CD tools. There are two deployment methods: push-based and pull-based. I prefer the pull-based method because it's more secure and less prone to problems. To choose the best approach, consider your team's needs and weigh the pros and cons of each method. Either way, you'll have better collaboration and compliance, and improved automation for more stability and resilience.
+GitOps is a powerful way to manage infrastructure. Where you define infrastructure as code, version control it in Git, and automate deployment of changes with CD tools. There are two deployment methods: push-based and pull-based. I prefer the pull-based method because it's more secure and less prone to problems. To choose the best approach, consider your team's needs and weigh the pros and cons of each method. Either way, you'll have better collaboration and compliance, and improved automation for more stability and resilience.

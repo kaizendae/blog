@@ -3,7 +3,7 @@ const siteMetadata = {
   author: 'Abdelati EL ASRI',
   headerTitle: 'Abdelati EL ASRI',
   description:
-    'A software engineer who values learning and growing with people, teams, and technologies.',
+    'I am Abdelati a software engineer, I love to build things and share my knowledge with others.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: '',
