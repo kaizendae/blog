@@ -17,11 +17,28 @@ This article explores the benefits of GitOps and its different approaches, and e
 
 ![GitOps](https://sunnysingh.io/static/1148fbc10e17a19897b82cf82c816d62/2bef9/meta.png)
 
-If you guessed from the name that we're versioning something in Git, you're correct. Specifically, we're versioning the declarative code that defines our infrastructure.
+If you guessed from the name that we're versioning something in Git, you're correct. Specifically, we're versioning the declarative code that defines our infrastructure. and GitOps is mainly just tracking and collaborating on the code that defines your infrastructure.
 
-When we provision infrastructure, we can do it imperatively, using AWS console or AWS CLI commands, for example. However, this imperative approach has some unbearable flaws, such as leading to configuration drift and inconsistencies and unpredictability in your environments, which increases the risk of downtime, security vulnerabilities, and being difficult to automate. Ultimately, it can slow down your business goals as customers may lose trust in your ability to provide reliable and secure services.
+#### The Why?
 
-Tools like Pulumi and Terraform have emerged to help engineers write declarative Infrastructure as Code that can be version controlled in Git. This allows us to keep track of changes happening to infrastructure over time and avoid configuration drift and inconsistency.
+When a team uses cloud or kubernetes and have many changing parts in their cloud account or in their clusters, tracking all the changes made to cloud resources or which image should be running on your deployment is hard to achieve if not tracked via git operations (a history of commits and PRs).\
+
+The non-GitOps way would involve team members (or just one member) provisioning infrastructure imperatively using AWS Console, AWS CLI, or kubectl. However, this approach has some unbearable flaws. It lacks the traceability of changes made to your infrastructure and can lead to configuration drift, inconsistencies, and unpredictability in your environments. These issues increase the risk of downtime, security vulnerabilities, and difficulty in automation. Ultimately, it can slow down your business goals as customers may lose trust in your ability to provide reliable and secure services.\
+
+Overall declaring infra and tracking it in Git, helps your team be less clumsy, rely less on human memory, and be more confident in the single source of truth(Git) that is sanitized by PRs. Ultimately avoid configuration drift and inconsistencies in your environments.\
+
+In my pov this will only work for your team is disciplined enough to version all the changes and allow not changes to sweep imperatively.
+
+#### The How?
+
+Tools like Pulumi and Terraform have emerged to help engineers write declarative Infrastructure as Code that can be easily version controlled in Git. All you have to do is:\
+
+1. Create a GitOps repository that is gonna hold the truth for you.
+2. Protect the main branch of it from any force pushed changes, allowing only changes via PRs.
+3. Create and change your infrastructure code, while testing on a sandbox environment.
+4. If all goes well, You commit the changes and merge them to the main branch.
+
+The next step is automating the changes that are approved into your master branch, and how to keep your environments in sync with what's in your repository.
 
 ### The Ops in Git-Ops
 
