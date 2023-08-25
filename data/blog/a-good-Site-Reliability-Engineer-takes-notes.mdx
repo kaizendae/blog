@@ -1,0 +1,75 @@
+---
+title: 'A good Site Reliability Engineer takes notes'
+date: '2023-08-25'
+tags: ['devops', 'sre', 'career advice']
+draft: false
+summary: 'A comprehensive guide to GitOps, an approach to infrastructure management that involves defining infrastructure as code and version controlling it in Git. The article explores the benefits of GitOps and its different approaches, including push-based and pull-based deployment.'
+images: ['']
+authors: ['default']
+---
+
+Are you familiar with GitOps and interested in catching up with your team? Or are you wondering if adopting this approach will solve some of your problems?
+This article explores the benefits of GitOps and its different approaches, and explains why it's worth considering for your team.
+
+---
+
+> I was wrong, I should not compete with the machine, I should merge with it, use it for where I'm not very good at.
+
+In the past few months, I have been improving my relationship with writing more documentation and notes in my day-to-day work as a Site Reliability Engineer, This practice that I have long disliked and thought of as taxing and burdening, I am slowly realizing the magnitude or my mistake, but I am also thrilled to introduce you to the idea so that we can reap the benefits together.
+
+Years in my life, my ego has always blinded my sight, I always thought I had a sharp mind that I could rely on, as I grew to understand a highly available postgres cluster is probably more reliable than my brain when it comes to storing information. There goes the realization that humans can actually build tools that complete their imperfections; but, what's more powerful than the machine is the cyborg, merging the creativity of the human being with the engineered reliability of a process and a machine.
+
+So what begun with ego slowly dissolved into humbleness and desire to integrate with the machine instead of delusional hope to outperform it, I went from thinking taking notes is slowing me down, taxing me, and I won't be moving fast enough, to consistently take notes or my work like a ritual, and here how that went:
+
+## Where I employed the practice, and How it helped me
+
+### 1. In the Meetings
+
+I never noticed but the startup I'm working at (and probably many others) suffer from prioritization and remembering problem, our attention is always consumed by something urgent that came up and might not be even that urgent.
+
+> Once we set up a whole environment without a database backup (lesson learned, more on this story later..)
+
+Only recently after I started opening a document for my weekly meetings about infrastructure and taking small notes of what we discussed and what's on our high priority list, that **I started noticing we were not finishing everything we discussed in week, and some of the work that needs to be done gets forgotten because it was not recorded and properly prioritized.** the next meetings there are always more things that we discussed.
+Slowly I started picking up what used to slip through, and remind the team of last meeting's important actions, discuss them a second time briefly and either assign resources to them or push them to a priority list, **the result of this is of course very positive**, we started moving forward, **we acquired more resources that we could assign to those tasks to match the velocity and sometimes we decide a change is far-fetched and not necessary.**
+
+And no, I am not becoming a manager or a secretary by starting to take notes of meetings, I take them to make my improve myself and my I'm simply taking the actions necessary so that my career progresses efficiently without much waste. see that's problem-solving that I care about, caring if I'm a secretary is Politics, I don't like politics.
+
+### 2. In The Actual Work
+
+More often than not, a manual task isn't requested enough for its automation to be beneficial, sometimes you have to perform a manual task once or twice in a month, and in that time you don't want to be researching stack overflow all over again for the answer that worked for you, adjusting it again to your context and probably forget an important step and it's a lot of going back and forth before the task is successfully done, Another one that happens a lot to me is searching the history of commands in my terminal for the one only to realized you changed something before it worked.
+
+What I noticed after I started noting my SQL snippets and Context-Specific Command flows, is:
+
+1. Tasks take me far less time the next time they occur, because I don't have to care about fitting solutions on the internet to my context again.
+2. Execute tasks more confidently, leaving room for uncertainty only when it's necessary.
+3. I don't feel repetitive by thinking about something I thought already in the past.
+4. My brain is less burdened, it's like I'm executing heavy queries just on a reader replica.
+5. Overall these kind of notes make me fast and reliable as a Site Reliability Engineer, and they bring you closer to automation, you already have the steps noted, in case this manual task became high occurrence one, you'll quickly mark it done, more to next fulfilling thing.
+
+### 3. In The Incident Response
+
+When I start investigating an incident, most of the time I check many places, realize many facts **_but keep them all cluttered in my mind_**, until I reach something very decisive then I start noting everything(or everything I can remember) for the report. But, by the time I have something decisive I forget all the work that lead me there and I focus solely on the conclusion, and I feel like I've done so much but very little to show for it; I don't have a trace of the all the evidence I collected and the places I looked, it seems like the solution came in one hit and one go.
+
+Documenting the journey of an investigation by doing the following helped a lot:
+
+- Screenshots of interesting findings in graphs.
+- Links to analytics in APM tools with specific time ranges to showcase a change in a graph.
+- Analytical theories and arguments for those.
+
+When I'm stuck I go back to my notes to find new direction to go, that often lead to better paths. it also makes my thinking clearer and less cloudy. I prepare better incident reports now and I can extract actions (without forgetting or losing info) to advise the team, all of this helps move the organization goals of improving performance and providing a more reliable service, it also makes me a valuable member of the team.
+
+## The Benefits ,It's a HELL YES.
+
+By now the benefits I hope are clear:
+
+- You strengthen your learning when noting, [Generation Effect](https://en.wikipedia.org/wiki/Generation_effect).
+- No more value loss, the info your worked hard for, you keep.
+- Stress less about forgetting, You have your noted knowledge when you want it.
+- Feeling of DONE, move to next task more relaxed.
+- You can delegate and provide clear instructions when you need to, avoiding the inefficiency that could rising from assigning a member without enough context to a task for the first time.
+- You spend less time looking for material to support you in your meetings or discussions.
+- You're more focused, engaged and productive.
+- You're less repetitive, less likely to feel stuck.
+- You're more efficient, Your work has more quality and the value is more visible.
+
+Docs and Notes become part of my ritual at work, I made a good case for it to my mind, that it has a big upside and close to zero tax, I find it easier to keep this ritual alive after demonstrating its value by experimentation to my self, I hope it does to you as well.
