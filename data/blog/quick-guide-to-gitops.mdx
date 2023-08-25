@@ -73,6 +73,16 @@ This approach is more secure as you don't have to share your cluster's access wi
 
 This approach has a flaw that only becomes problematic at large scales and with big Kubernetes clusters. With many agents polling your container registries and Git (especially self-hosted), it can overload your network resources (i.e., bandwidth) and potentially hurt your overall performance.
 
+#### Tips to Learn GitOps Fast
+
+As a beginner, I would recommend you to start with the push-based approach, as it's easier to setup and understand. Once you get the hang of it, you can move to the pull-based approach.
+
+**To achieve any progress**:
+
+- First you need to familiarize yourself enough with Git and Basic CI/CD concepts in a hobby project.
+- Add infrastructure code to your repository, Then add a (Push-based) CD step to your pipeline that applies the changes to your cloud environment.
+- Once you get the hang of it, you can move to the pull-based approach (containerize your app and experiment with FluxCD or ArgoCD).
+
 ### In short
 
 GitOps is a powerful way to manage infrastructure. Where you define infrastructure as code, version control it in Git, and automate deployment of changes with CD tools. There are two deployment methods: push-based and pull-based. I prefer the pull-based method because it's more secure and less prone to problems. To choose the best approach, consider your team's needs and weigh the pros and cons of each method. Either way, you'll have better collaboration and compliance, and improved automation for more stability and resilience.
