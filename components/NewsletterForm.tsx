@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 
 import siteMetadata from '@/data/siteMetadata';
 
-const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
+const NewsletterForm = ({ title = 'Stay Ahead... Subscribe' }) => {
   const inputEl = useRef<HTMLInputElement>(null);
   const [error, setError] = useState(false);
   const [message, setMessage] = useState('');
@@ -21,6 +21,7 @@ const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
       method: 'POST',
     });
 
+    console.log(res);
     const { error } = await res.json();
     if (error) {
       setError(true);
