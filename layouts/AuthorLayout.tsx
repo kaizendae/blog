@@ -21,7 +21,6 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
     <>
       <PageSEO title={`About - ${name}`} description={`About me - ${name}`} />
       <div className='fade-in divide-y-2 divide-gray-100 dark:divide-gray-800'>
-        <Header title='About' />
         <div className='items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0'>
           <div className='flex flex-col items-center space-x-2 pt-8'>
             <Image

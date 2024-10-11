@@ -15,9 +15,13 @@ github: https://github.com/kaizendae
 
 I'm Abdelati El Asri, a **DevOps** and **Site Reliability Engineer** at **[Elham.sa](https://elham.sa)**. I focus on ensuring the scalability and reliability of an e-learning platform serving millions of users globally. I love problem solving and seeing keyboard taps turn into solutions, that's why I dive into **backend** and **frontend** development too.
 
+### Blog ✍️
+
+Check out my latest posts [here](/blog).
+
 ### Podcast 🎙️
 
-In addition to my engineering work, I host the **[Devs in Style Podcast](/podcast)**, where I discuss tech, entrepreneurship, and developer culture in Moroccan dialect, aiming to spark valuable conversations within the community.
+In addition to my engineering work, I host the **[Devs in Style Podcast](/podcast)**, where I discuss tech, entrepreneurship, and developer culture in Moroccan dialect.
 
 ### Art ✨
 
