@@ -37,7 +37,7 @@ export const Colors = {
   docker: '#0DB7Ed',
   kubernetes: '#326CE5',
   terraform: '#7B42BC',
-
+  pulumi: '#f26e7e',
   // Messaging
   nats: '#199bfc',
   kafka: '#000000',

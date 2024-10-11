@@ -2,7 +2,6 @@ import { Colors } from './colors';
 
 export enum Stack {
   // Languages
-  go,
   typescript,
   javascript,
   python,
@@ -34,25 +33,25 @@ export enum Stack {
   docker,
   kubernetes,
   terraform,
+  pulumi,
 }
 
 export const WorkStack = [
-  Stack.go,
+  Stack.kubernetes,
+  Stack.docker,
+  Stack.pulumi,
+  Stack.terraform,
   Stack.typescript,
   Stack.python,
   Stack.react,
   Stack.aws,
   Stack.gcp,
-  Stack.kubernetes,
-  Stack.docker,
-  Stack.terraform,
   Stack.nats,
   Stack.kafka,
   Stack.graphql,
   Stack.postgres,
   Stack.redis,
-  Stack.arangodb,
-  Stack.reactnative,
+  // Stack.reactnative,
 ];
 
 type StackInfoMap = {
@@ -61,6 +60,22 @@ type StackInfoMap = {
 };
 
 export const StackInfo: Record<Stack, StackInfoMap> = {
+  [Stack.kubernetes]: {
+    value: 'Kubernetes',
+    color: Colors.kubernetes,
+  },
+  [Stack.docker]: {
+    value: 'Docker',
+    color: Colors.docker,
+  },
+  [Stack.terraform]: {
+    value: 'Terraform',
+    color: Colors.terraform,
+  },
+  [Stack.pulumi]: {
+    value: 'Pulumi',
+    color: Colors.pulumi,
+  },
   [Stack.typescript]: {
     value: 'TypeScript',
     color: Colors.typescript,
@@ -68,10 +83,6 @@ export const StackInfo: Record<Stack, StackInfoMap> = {
   [Stack.javascript]: {
     value: 'JavaScript',
     color: Colors.javascript,
-  },
-  [Stack.go]: {
-    value: 'Go',
-    color: Colors.go,
   },
   [Stack.react]: {
     value: 'React',
@@ -128,17 +139,5 @@ export const StackInfo: Record<Stack, StackInfoMap> = {
   [Stack.mongo]: {
     value: 'MongoDB',
     color: Colors.mongo,
-  },
-  [Stack.docker]: {
-    value: 'Docker',
-    color: Colors.docker,
-  },
-  [Stack.kubernetes]: {
-    value: 'Kubernetes',
-    color: Colors.kubernetes,
-  },
-  [Stack.terraform]: {
-    value: 'Terraform',
-    color: Colors.terraform,
   },
 };
