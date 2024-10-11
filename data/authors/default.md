@@ -13,7 +13,7 @@ github: https://github.com/kaizendae
 
 ## Hey there! 👋
 
-I'm Abdelati El Asri, a **DevOps** and **Site Reliability Engineer** at **[Elham.sa](https://elham.sa)**. I focus on ensuring the scalability and reliability of an e-learning platform serving millions of users globally. I love problem solving and seeing keyboard taps turn into solutions, that's why I dive into **backend** and **frontend** development too.
+I'm Abdelati El Asri, a **DevOps** and **Site Reliability Engineer** at **[Elham.sa](https://elham.sa)**. I focus on ensuring the scalability and reliability of an e-learning platform serving millions of users globally. I love problem solving and seeing keyboard taps turn into solutions, that's why I dive into development too.
 
 ### Blog ✍️
 
