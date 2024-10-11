@@ -21,7 +21,7 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
     <>
       <PageSEO title={`About - ${name}`} description={`About me - ${name}`} />
       <div className='fade-in divide-y-2 divide-gray-100 dark:divide-gray-800'>
-        <div className='items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0'>
+        <div className='items-start space-y-2 xl:gap-x-8 xl:space-y-0'>
           <div className='flex flex-col items-center space-x-2 pt-8'>
             <Image
               src={avatar}
@@ -37,10 +37,6 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
               {occupation}
             </div>
             <div className='text-gray-500 dark:text-gray-400'>{company}</div>
-          </div>
-
-          <div className='prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2'>
-            {children}
             <p className='mt-8'>
               <a
                 className='!font-normal !text-black !no-underline dark:!text-white'
@@ -59,11 +55,15 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
                   Resume
                 </RoughNotation>
               </a>
-              <h2 className='mt-8 mb-4 text-2xl font-semibold dark:text-white'>
+              {/* <h2 className='mt-8 mb-4 text-2xl font-semibold dark:text-white'>
                 Skills
               </h2>
-              <StackList stack={WorkStack} />
+              <StackList stack={WorkStack} /> */}
             </p>
+          </div>
+
+          <div className='prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2'>
+            {children}
           </div>
         </div>
       </div>
