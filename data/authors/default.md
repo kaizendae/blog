@@ -29,6 +29,6 @@ Checkout at:
 
 And connect with a community of like-minded people.
 
-### Community ✨
+### Community 🎉
 
-I'm a member of [geeksblabla](https://geeksblabla.io/), a community of tech enthusiasts in Morocco.
+I'm an Active member of [geeksblabla](https://geeksblabla.io/), a community of tech enthusiasts in Morocco. We host weekly podcasts and meetups to discuss tech, entrepreneurship, and career development.
