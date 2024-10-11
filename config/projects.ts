@@ -44,7 +44,6 @@ export const projects: Project[] = [
     repository: 'https://github.com/karanpratapsingh/HyperTrade',
     stack: [
       Stack.nats,
-      Stack.go,
       Stack.typescript,
       Stack.react,
       Stack.python,
