@@ -33,18 +33,17 @@ function Banner(props: BannerProps): React.ReactElement {
             about me
           </RoughNotation>
         </Link>
-        {/*or*/}
-        {/*<Link className='ml-2 font-normal text-black' href='/contact'>*/}
-        {/*  <RoughNotation*/}
-        {/*    show*/}
-        {/*    type='highlight'*/}
-        {/*    animationDelay={250}*/}
-        {/*    animationDuration={2000}*/}
-        {/*    color={contactColor}*/}
-        {/*  >*/}
-        {/*    contact me*/}
-        {/*  </RoughNotation>*/}
-        {/*</Link>*/}
+        <Link className='ml-2 font-normal text-black' href='/contact'>
+          <RoughNotation
+            show
+            type='highlight'
+            animationDelay={250}
+            animationDuration={2000}
+            color={contactColor}
+          >
+            contact me
+          </RoughNotation>
+        </Link>
       </p>
     </div>
   );

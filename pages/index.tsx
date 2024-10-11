@@ -1,38 +1,31 @@
-import { PageSEO } from '@/components/SEO';
-import siteMetadata from '@/data/siteMetadata';
+import { MDXLayoutRenderer } from '@/components/MDXComponents';
 import { getFileBySlug } from '@/lib/mdx';
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
-import dynamic from 'next/dynamic';
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter';
 
-// TODO: Direct share functionality.
-// TODO: Switch geist-ui with something simple.
+const DEFAULT_LAYOUT = 'AuthorLayout';
 
 // @ts-ignore
 export const getStaticProps: GetStaticProps<{
-  author: AuthorFrontMatter;
+  authorDetails: { mdxSource: string; frontMatter: AuthorFrontMatter };
 }> = async () => {
   const authorDetails = await getFileBySlug<AuthorFrontMatter>('authors', [
     'default',
   ]);
-
-  const { frontMatter: author } = authorDetails;
-
-  return { props: { author } };
+  const { mdxSource, frontMatter } = authorDetails;
+  return { props: { authorDetails: { mdxSource, frontMatter } } };
 };
 
-const Banner = dynamic(import('@/components/Banner'));
-
 export default function Home({
-  author,
+  authorDetails,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
+  const { mdxSource, frontMatter } = authorDetails;
+
   return (
-    <>
-      <PageSEO
-        title={siteMetadata.title}
-        description={siteMetadata.description}
-      />
-      <Banner frontMatter={author} />
-    </>
+    <MDXLayoutRenderer
+      layout={frontMatter.layout || DEFAULT_LAYOUT}
+      mdxSource={mdxSource}
+      frontMatter={frontMatter}
+    />
   );
 }
