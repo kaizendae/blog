@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 
 import siteMetadata from '@/data/siteMetadata';
 
-const NewsletterForm = ({ title = 'Stay Ahead... Subscribe' }) => {
+const NewsletterForm = ({ title = 'To not miss future lessons 👇' }) => {
   const inputEl = useRef<HTMLInputElement>(null);
   const [error, setError] = useState(false);
   const [message, setMessage] = useState('');
@@ -52,9 +52,7 @@ const NewsletterForm = ({ title = 'Stay Ahead... Subscribe' }) => {
             className='w-72 rounded-md px-4 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-primary-600 dark:bg-black'
             id='email-input'
             name='email'
-            placeholder={
-              subscribed ? "You're subscribed !  🎉" : 'Enter your email'
-            }
+            placeholder={subscribed ? "You're subscribed !  🎉" : 'elon@x.com'}
             ref={inputEl}
             required
             type='email'
@@ -71,7 +69,7 @@ const NewsletterForm = ({ title = 'Stay Ahead... Subscribe' }) => {
             type='submit'
             disabled={subscribed}
           >
-            {subscribed ? 'Thank you!' : 'Sign up'}
+            {subscribed ? 'Thank you!' : 'Get updates'}
           </button>
         </div>
       </form>
