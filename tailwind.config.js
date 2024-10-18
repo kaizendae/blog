@@ -32,7 +32,7 @@ module.exports = {
         sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        primary: colors.cyan,
+        primary: colors.green,
         gray: colors.neutral,
         'placeholder-light': '#F0F0F0',
         'placeholder-dark': '#252525',
