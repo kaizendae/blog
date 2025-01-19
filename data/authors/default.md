@@ -4,7 +4,7 @@ shortname: Abdelati
 avatar: /static/avatar.png
 occupation: Devops / SRE
 company: elham.sa
-resume: https://kaizendae.notion.site/Elasri-Abdelati-Site-Reliability-Engineer-33d4da0f39d24e7998518a3d06d555a3
+resume: /static/resume.pdf
 email: abdelattie@gmail.com
 twitter: https://twitter.com/kaizendae
 linkedin: https://www.linkedin.com/in/elasri-abdelati
