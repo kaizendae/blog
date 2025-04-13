@@ -1,22 +1,75 @@
 ---
-title: 'CKS...'
-date: '2023-05-06'
-tags: ['devops', 'security', 'kuberentes']
-draft: true
-summary: '...'
+title: "I passed the CKS in 40 days — here's how & what I learned"
+date: '2025-04-13'
+tags: ['kubernetes', 'certification', 'security', 'devops', 'exam-preparation']
+draft: false
+summary: 'I passed the Certified Kubernetes Security Specialist (CKS) exam with 83% in 40 days of prep. This post is a prep journal + what worked + the lessons I learned along the way.'
 images: ['']
 authors: ['default']
 ---
 
-write a summary here?
+40 days, with Ramadan post-fotour study sessions and few self-doubt moments — I passed the Certified Kubernetes Security Specialist (CKS) exam with 83%.
+
+In this post, I’m sharing about this journey, including:
+
+✅ What worked (and what didn’t)
+✅ The resources that actually helped
+✅ Lessons from studying with ADHD, traveling during Aïd, and hitting walls with mock exams and system hardening
+
+If you're on the CKS path — this one's for you.
 
 ---
 
-- 01/03/2025 I started my preparations for CKS as Ive decided going for KSCA would I will have to study all the materials and more in order to pass CKS, so I decided to go for CKS first and then KSCA.
+## 📅 Prep Journal
 
-- 06/03/2025 Asked the AI again about my ability to take the exam just with kodekloud resources, given my current knowledge and experience, it said I can do it.
-  as I have been dealing with managed kubernetes clusters my security and administration aren't my strongest skills at the moment.
-  preparing for the exam is the best way I can learn about these areas, improve my skills, and also apply what I learned to cover these blind spots that the companies I work at
-  might have.
+- **01/03/2025** I started my preparations for CKS as I've decided going for KSCA would mean I have to study all the materials and more in order to pass CKS, so I decided to go for CKS first and then KSCA.
 
--
+- **06/03/2025** Asked the AI again about my ability to take the exam just with KodeKloud resources. Given my current knowledge and experience, it said I can do it. As I have been dealing with managed Kubernetes clusters only in my job, my security and administration skills aren't my strongest at the moment. Preparing for the exam is the best way I can learn about these areas, improve my skills, and also apply what I learned to cover these blind spots that the companies I work at might have.
+
+- **12/03/2025** I have been studying for the exam for a week now. I have been using the KodeKloud resources and the official documentation. I am at 69% progress on the Cluster Setup & Hardening section and 29% of the overall course. I am trying to do the labs in KodeKloud in 15-20 minutes or less.
+
+- **14/03/2025** I am repeating the system hardening part because I was less confident about this part, as I rarely used these concepts.
+
+- **15/03/2025** SecComp threw me off as it was a new concept for me. I had to read the documentation and still did not understand anything. I will come back to it later. I distracted myself a bit with KillerCoda as it was quite fun.
+
+- **up to 23/03/2025** for the past days I have been studying an average of 2h per day on both kodekloud and killer.sh 11h long video on youtube. have created the cluster on GCP and applied along
+
+- **23/03/2025** Studied for 3 continuous hours today, felt strong about it. got both kodekloud and killer vid to 60% completion.
+
+- **24/03/2025 - 27/03/2025** continued studying for 2-3 hours a day.
+
+- **28/03/2025** I travelled because of Aïd al-Fitr. gonna try to study in the next days in my home town (spoiler alert I didn't study at all).
+
+- **29/03/2025 - 10/04/2025** **[ while traveling ]** tried to study but I was not able to focus at all. I was trying to do the mock exams on KodeKloud but I was getting frustrated by my low performance.
+
+- **11/04/2025** Back home today, I did well on the mock exams and noticed my focus and ability are back. **(See the tips section later for the lesson here)**
+
+  Completed the 3 mock exams today with comfort.
+
+  Scheduled my exam for tomorrow, **12th of April**, at 10:00 am.
+
+  Did the Killer.sh exam today. I was able to finish it in 2 hours and 30 minutes. I wasn't able to do all the tasks, but I was able to do 64/85 of them.
+
+- **12/04/2025** Continued to study on the Killer.sh exam, attempting to resolve the rest of the questions outside of the time constraint. Some of them required looking at the solution. Eventually, I resolved all of them.
+
+  **14:20 am** at my desk waiting for the portal to open up at **14:30 am**. I am nervous but I feel ready. I have been studying for 40 days now.
+
+  (Opening this editor and jotting down notes at **14:24** is quite a good strategy to calm down before the exam.)
+
+  Post-exam notes:
+
+  - I was not able to finish all the questions comfortably. I left one question unanswered regarding users and groups in Linux.
+  - I consumed all the time I got and this exam lived up to its reputation. It was hard. My previous experience with CKAD and CKA was much easier as I finished in 50-60% of the time.
+  - I was able to do the rest of the questions. About 2 questions I wasn't 100% sure about the answer, but I was able to do them.
+
+- **13/04/2025** **15:05** I got my results. I passed the exam with 83% and I am now CKS certified. I am very happy about this result. I was able to do all the tasks in the exam and I was able to finish it in 2 hours and 30 minutes. I am very happy about this result. I was able to do all the tasks in the exam and I was able to finish it in 2 hours and 30 minutes.
+
+## 🧠 Tips and Takeaways
+
+- Avoid setting up shortcuts like `alias k=kubectl` or `export do="--dry-run=client -o yaml"` during the exam. Each question has a different environment you ssh into, and most don't require dry-run. no need for these fancy shortcuts, just remember the commands and use them as they are.
+- Consistency is key. Once you start studying, maintain momentum until you pass. While knowledge doesn't completely fade when you take a break, stopping can impact your short-term memory, which is crucial for passing the exam.
+- If you stick to watching videos and re-typing solutions from KodeKloud or Killer.sh, you will think the exam is much harder than it actually is. Learn to find the information in the docs instead of trying to memorize the solutions you see.
+- While you are practicing, learn to scout the docs very fast and find the information you need without reading the entire page. This will help you a lot in the exam given the limited time. Ultimately, if you practice enough in the labs, you will be able to find the information you need in the docs without even looking for it.
+- Use [KillerKoda](https://killercoda.com/killer-shell-cks). They help familiarize you with some blind spots and improve your memory on some things.
+- If you are somewhat ADHD like me, learn from multiple resources at the same time but not too much. I used KodeKloud + Killer.sh video (11 hours on YouTube + applying on Google Cloud cluster) + Killer Koda.
+- Don't open Killer.sh until you are fully prepared. If you pass very early, it will only discourage you `even if you're prepared you still get somewhat discouraged xD`. Treat it like the real exam, then when the time is up, try to finalize the questions without looking at the solutions. Only open the score page and try to solve the questions you got wrong. This will help you a lot in the real exam.
