@@ -52,7 +52,9 @@ const NewsletterForm = ({ title = 'To not miss future lessons 👇' }) => {
             className='w-72 rounded-md px-4 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-primary-600 dark:bg-black'
             id='email-input'
             name='email'
-            placeholder={subscribed ? "You're subscribed !  🎉" : 'elon@x.com'}
+            placeholder={
+              subscribed ? "You're subscribed !  🎉" : 'hey@gmail.com'
+            }
             ref={inputEl}
             required
             type='email'
