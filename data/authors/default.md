@@ -4,7 +4,7 @@ shortname: Abdelati
 avatar: /static/avatar.png
 occupation: Devops / SRE
 company: elham.sa
-resume: /static/resume.pdf
+resume: https://resume.io/r/onoPBGDYL
 email: abdelattie@gmail.com
 twitter: https://twitter.com/kaizendae
 linkedin: https://www.linkedin.com/in/elasri-abdelati
