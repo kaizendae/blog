@@ -11,19 +11,22 @@ linkedin: https://www.linkedin.com/in/elasri-abdelati
 github: https://github.com/kaizendae
 ---
 
-## Hey there! 👋
+**Hey there! 👋** I'm Abdelati, a DevOps and Site Reliability Engineer at [Elham.sa](https://elham.sa). I focus on ensuring the scalability and reliability of an e-learning platform serving millions of users globally. I love problem solving and seeing keyboard taps turn into solutions, that's why I dive into development too.
 
-I'm Abdelati El Asri, a **DevOps** and **Site Reliability Engineer** at **[Elham.sa](https://elham.sa)**. I focus on ensuring the scalability and reliability of an e-learning platform serving millions of users globally. I love problem solving and seeing keyboard taps turn into solutions, that's why I dive into development too.
+### 📚 My Blog Posts
 
-### Blog ✍️
+Here are some of my latest articles:
 
-Check out my latest posts [here](/blog).
+- [**Becoming a Kubestronaut 🚀**](/blog/kubestronaut)
+- [**I passed the hardest kubernetes exam in 40 days — here's how & what I learned**](/blog/CKS)
+- [**A good Site Reliability Engineer takes notes**](/blog/a-good-Site-Reliability-Engineer-takes-notes)
+- [**Quick comprehensive guide to GitOps**](/blog/quick-guide-to-gitops)
 
-### Podcast 🎙️
+Want more? [Browse all posts](/blog).
 
-In addition to my engineering work, I host the **[Devs in Style Podcast](/podcast)**, where I discuss tech, entrepreneurship, and developer culture in Moroccan dialect.
+I talk about DevOps, SRE, Kubernetes, and more 🎙️ **[Devs in Style Podcast](/podcast)**.
 
-### Art ✨
+### Art & Merch ✨
 
 I also design merch for the Moroccan tech community. Blending tech and Moroccan heritage, Making T-shirts that express our identity, passion and profession.
 Checkout at:
@@ -31,8 +34,6 @@ Checkout at:
 - **[🇲🇦 DevsInStyle Store](https://devsinstyle.ma)** if you're based in Morocco.
 - **[🌍 DevsInStyle Store](https://devsinstyle.com)** if you live aborad.
 
-And connect with a community of like-minded people.
-
 ### Community 🎉
 
-I'm an Active member of [geeksblabla](https://geeksblabla.io/), a community of tech enthusiasts in Morocco. We host weekly podcasts and meetups to discuss tech, entrepreneurship, and career development.
+I'm an Active member of [geeksblabla](https://geeksblabla.community/), a community of tech enthusiasts in Morocco. We host weekly podcasts and meetups to discuss tech, entrepreneurship, and career development.

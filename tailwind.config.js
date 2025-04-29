@@ -42,9 +42,9 @@ module.exports = {
           css: {
             color: theme('colors.gray.700'),
             a: {
-              color: theme('colors.green.500'),
+              color: theme('colors.green.700'),
               '&:hover': {
-                color: `${theme('colors.green.600')} !important`,
+                color: `${theme('colors.green.800')} !important`,
               },
               code: { color: theme('colors.primary.400') },
             },
